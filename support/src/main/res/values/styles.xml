@@ -1,0 +1,22 @@
+<resources>
+
+    <item type="id" name="statusbarutil_fake_status_bar_view" />
+    <item type="id" name="statusbarutil_translucent_view" />
+
+    <dimen name="common_corner">6dp</dimen>
+    <dimen name="common_stroke">0.6dp</dimen>
+
+    <declare-styleable name="LoadingView">
+        <attr name="loadingText" format="string|reference"/>
+        <attr name="delay" format="integer|reference"/>
+    </declare-styleable>
+
+    <color name="blackHint">#ff3d3d3d</color>
+    <color name="blue">#ff12a0ea</color>
+    <color name="orange">#fe7418</color>
+    <color name="red">#ff2711</color>
+    <color name="gray">#c9c9c9</color>
+    <color name="triangle">#aa72d572</color>
+    <color name="circle">#aa738ffe</color>
+    <color name="rect">#aae84e40</color>
+</resources>
