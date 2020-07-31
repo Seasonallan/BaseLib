@@ -76,6 +76,9 @@ public class StartPageView extends View implements PageAnimController.PageCarver
             if (isFinish)
                 drawPage(canvas, currentPage);
         }
+        if (!isAnimating){
+            drawPage(canvas, currentPage);
+        }
     }
 
     @Override
@@ -125,8 +128,10 @@ public class StartPageView extends View implements PageAnimController.PageCarver
         return -1;
     }
 
+    boolean isAnimating = false;
     @Override
     public void onStartAnim(boolean isCancel) {
+        isAnimating = true;
         setVisibility(View.VISIBLE);
     }
 
